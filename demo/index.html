@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Demo data-provider</title>
+		<style>
+			body {
+				background-color: #e4e3e3;
+				padding: 10px;
+			}
+			pre {
+				outline: 1px solid #ccc;
+				padding: 5px;
+				overflow: auto;
+				font: 13px/18px monospace;
+				-webkit-font-smoothing: antialiased;
+				background-color: #fff;
+			}
+			.string {
+				color: #008200;
+			}
+			.number,
+			.boolean,
+			.null {
+				color: #069;
+				font-weight: 600;
+			}
+
+			.key {
+				color: #272727;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="demo">
+			<button id="getPost1">Get post(1)</button>
+			<button id="getPost">Get posts</button>
+			<button id="createPost">Create post</button>
+			<button id="putPost1">Put post(1)</button>
+			<button id="patchPost1">Patch post(1)</button>
+			<button id="deletePost1">Delete post(1)</button>
+			<button id="findUserID">find userId(10) for params</button>
+			<data-provider id="dataProvider"></data-provider>
+			<pre>Click on any button!!</pre>
+		</div>
+	</body>
+	<script type="module" src="./index.js"></script>
+</html>
