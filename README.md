@@ -1,4 +1,4 @@
-# \<data-manager>
+# \<data-provider>
 
 ## Installation
 
@@ -29,11 +29,11 @@ You will also see any lint errors in the console.
 ## Usage
 
 ```html
-<data-manager></data-manager>
+<data-provider></data-provider>
 
 <script type="module">
 	/** Watch the demo for more examples **/
-	import "data-manager/data-manager.js";
+	import "data-provider/data-provider.js";
 	const dp = document.querySelector("#dataProvider");
 
 	dp.resetData(); //Reset all properties
